@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7E3EC1C91B23925E001B164E /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3EC1C81B23925E001B164E /* UIViewController+Extensions.swift */; };
+		7E3EC1CB1B23B31F001B164E /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3EC1CA1B23B31F001B164E /* TabBarController.swift */; };
 		7E41923F1B1D584A0082C053 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E41923D1B1D584A0082C053 /* StartViewController.swift */; };
 		7E4192401B1D584A0082C053 /* StartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E41923E1B1D584A0082C053 /* StartViewController.xib */; };
 		7E8EB4621B1ABBD9005D6DAC /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E8EB4601B1ABBD9005D6DAC /* Bolts.framework */; };
@@ -44,6 +45,7 @@
 
 /* Begin PBXFileReference section */
 		7E3EC1C81B23925E001B164E /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		7E3EC1CA1B23B31F001B164E /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		7E41923D1B1D584A0082C053 /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		7E41923E1B1D584A0082C053 /* StartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StartViewController.xib; sourceTree = "<group>"; };
 		7E8EB4601B1ABBD9005D6DAC /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../Downloads/parse-library-1.7.4/Bolts.framework"; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				7E41923E1B1D584A0082C053 /* StartViewController.xib */,
 				7E9762341B1EA5B0005AE9B3 /* AuthViewController.swift */,
 				7E9762351B1EA5B0005AE9B3 /* AuthViewController.xib */,
+				7E3EC1CA1B23B31F001B164E /* TabBarController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 				7ECB241B1B238324002B773B /* String+Extensions.swift in Sources */,
 				7EE8E06B1B1804F1006640CE /* AppDelegate.swift in Sources */,
 				7E3EC1C91B23925E001B164E /* UIViewController+Extensions.swift in Sources */,
+				7E3EC1CB1B23B31F001B164E /* TabBarController.swift in Sources */,
 				7E9762361B1EA5B0005AE9B3 /* AuthViewController.swift in Sources */,
 				7E41923F1B1D584A0082C053 /* StartViewController.swift in Sources */,
 			);
