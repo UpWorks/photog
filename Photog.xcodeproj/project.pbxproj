@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E3EC1C91B23925E001B164E /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3EC1C81B23925E001B164E /* UIViewController+Extensions.swift */; };
 		7E41923F1B1D584A0082C053 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E41923D1B1D584A0082C053 /* StartViewController.swift */; };
 		7E4192401B1D584A0082C053 /* StartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E41923E1B1D584A0082C053 /* StartViewController.xib */; };
 		7E8EB4621B1ABBD9005D6DAC /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E8EB4601B1ABBD9005D6DAC /* Bolts.framework */; };
@@ -24,6 +25,7 @@
 		7E8EB4791B1ABED9005D6DAC /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E8EB4781B1ABED9005D6DAC /* libsqlite3.dylib */; };
 		7E9762361B1EA5B0005AE9B3 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9762341B1EA5B0005AE9B3 /* AuthViewController.swift */; };
 		7E9762371B1EA5B0005AE9B3 /* AuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E9762351B1EA5B0005AE9B3 /* AuthViewController.xib */; };
+		7ECB241B1B238324002B773B /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECB241A1B238324002B773B /* String+Extensions.swift */; };
 		7EE8E06B1B1804F1006640CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE8E06A1B1804F1006640CE /* AppDelegate.swift */; };
 		7EE8E0721B1804F1006640CE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EE8E0711B1804F1006640CE /* Images.xcassets */; };
 		7EE8E0751B1804F1006640CE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EE8E0731B1804F1006640CE /* LaunchScreen.xib */; };
@@ -41,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7E3EC1C81B23925E001B164E /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		7E41923D1B1D584A0082C053 /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		7E41923E1B1D584A0082C053 /* StartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StartViewController.xib; sourceTree = "<group>"; };
 		7E8EB4601B1ABBD9005D6DAC /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../Downloads/parse-library-1.7.4/Bolts.framework"; sourceTree = "<group>"; };
@@ -58,6 +61,7 @@
 		7E8EB4781B1ABED9005D6DAC /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		7E9762341B1EA5B0005AE9B3 /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		7E9762351B1EA5B0005AE9B3 /* AuthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuthViewController.xib; sourceTree = "<group>"; };
+		7ECB241A1B238324002B773B /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		7EE8E0651B1804F1006640CE /* Photog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Photog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EE8E0691B1804F1006640CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7EE8E06A1B1804F1006640CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -130,6 +134,15 @@
 			name = ViewControllers;
 			sourceTree = "<group>";
 		};
+		7ECB24191B2382DE002B773B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7ECB241A1B238324002B773B /* String+Extensions.swift */,
+				7E3EC1C81B23925E001B164E /* UIViewController+Extensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		7EE8E05C1B1804F1006640CE = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +166,7 @@
 			children = (
 				7EE8E06A1B1804F1006640CE /* AppDelegate.swift */,
 				7E9762381B1EA5C6005AE9B3 /* ViewControllers */,
+				7ECB24191B2382DE002B773B /* Extensions */,
 				7EE8E0711B1804F1006640CE /* Images.xcassets */,
 				7EE8E0731B1804F1006640CE /* LaunchScreen.xib */,
 				7EE8E0681B1804F1006640CE /* Supporting Files */,
@@ -288,7 +302,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7ECB241B1B238324002B773B /* String+Extensions.swift in Sources */,
 				7EE8E06B1B1804F1006640CE /* AppDelegate.swift in Sources */,
+				7E3EC1C91B23925E001B164E /* UIViewController+Extensions.swift in Sources */,
 				7E9762361B1EA5B0005AE9B3 /* AuthViewController.swift in Sources */,
 				7E41923F1B1D584A0082C053 /* StartViewController.swift in Sources */,
 			);
