@@ -31,6 +31,11 @@
 		7EE8E0721B1804F1006640CE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EE8E0711B1804F1006640CE /* Images.xcassets */; };
 		7EE8E0751B1804F1006640CE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EE8E0731B1804F1006640CE /* LaunchScreen.xib */; };
 		7EE8E0811B1804F1006640CE /* PhotogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE8E0801B1804F1006640CE /* PhotogTests.swift */; };
+		7EEC5C9E1B24E77200CF6BED /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEC5C9D1B24E77200CF6BED /* NetworkManager.swift */; };
+		7EEC5CA11B24EA0C00CF6BED /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEC5C9F1B24EA0C00CF6BED /* FeedViewController.swift */; };
+		7EEC5CA21B24EA0C00CF6BED /* FeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EEC5CA01B24EA0C00CF6BED /* FeedViewController.xib */; };
+		7EEC5CA51B24ECE900CF6BED /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEC5CA31B24ECE900CF6BED /* PostCell.swift */; };
+		7EEC5CA61B24ECE900CF6BED /* PostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EEC5CA41B24ECE900CF6BED /* PostCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +77,11 @@
 		7EE8E07A1B1804F1006640CE /* PhotogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EE8E07F1B1804F1006640CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7EE8E0801B1804F1006640CE /* PhotogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotogTests.swift; sourceTree = "<group>"; };
+		7EEC5C9D1B24E77200CF6BED /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		7EEC5C9F1B24EA0C00CF6BED /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		7EEC5CA01B24EA0C00CF6BED /* FeedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedViewController.xib; sourceTree = "<group>"; };
+		7EEC5CA31B24ECE900CF6BED /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		7EEC5CA41B24ECE900CF6BED /* PostCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +143,10 @@
 				7E9762341B1EA5B0005AE9B3 /* AuthViewController.swift */,
 				7E9762351B1EA5B0005AE9B3 /* AuthViewController.xib */,
 				7E3EC1CA1B23B31F001B164E /* TabBarController.swift */,
+				7EEC5C9F1B24EA0C00CF6BED /* FeedViewController.swift */,
+				7EEC5CA01B24EA0C00CF6BED /* FeedViewController.xib */,
+				7EEC5CA31B24ECE900CF6BED /* PostCell.swift */,
+				7EEC5CA41B24ECE900CF6BED /* PostCell.xib */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -168,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				7EE8E06A1B1804F1006640CE /* AppDelegate.swift */,
+				7EEC5C9D1B24E77200CF6BED /* NetworkManager.swift */,
 				7E9762381B1EA5C6005AE9B3 /* ViewControllers */,
 				7ECB24191B2382DE002B773B /* Extensions */,
 				7EE8E0711B1804F1006640CE /* Images.xcassets */,
@@ -285,6 +300,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E9762371B1EA5B0005AE9B3 /* AuthViewController.xib in Resources */,
+				7EEC5CA61B24ECE900CF6BED /* PostCell.xib in Resources */,
+				7EEC5CA21B24EA0C00CF6BED /* FeedViewController.xib in Resources */,
 				7EE8E0751B1804F1006640CE /* LaunchScreen.xib in Resources */,
 				7EE8E0721B1804F1006640CE /* Images.xcassets in Resources */,
 				7E4192401B1D584A0082C053 /* StartViewController.xib in Resources */,
@@ -308,8 +325,11 @@
 				7ECB241B1B238324002B773B /* String+Extensions.swift in Sources */,
 				7EE8E06B1B1804F1006640CE /* AppDelegate.swift in Sources */,
 				7E3EC1C91B23925E001B164E /* UIViewController+Extensions.swift in Sources */,
+				7EEC5C9E1B24E77200CF6BED /* NetworkManager.swift in Sources */,
 				7E3EC1CB1B23B31F001B164E /* TabBarController.swift in Sources */,
+				7EEC5CA51B24ECE900CF6BED /* PostCell.swift in Sources */,
 				7E9762361B1EA5B0005AE9B3 /* AuthViewController.swift in Sources */,
+				7EEC5CA11B24EA0C00CF6BED /* FeedViewController.swift in Sources */,
 				7E41923F1B1D584A0082C053 /* StartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
