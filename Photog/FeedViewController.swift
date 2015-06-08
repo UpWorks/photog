@@ -12,7 +12,7 @@ import Bolts
 
 class FeedViewController: UIViewController, UITableViewDataSource {
 
-    var items = ["","","",""]
+    var items = ["", "", "", ""]
     
     @IBOutlet var tableView: UITableView?
     
@@ -22,9 +22,18 @@ class FeedViewController: UIViewController, UITableViewDataSource {
         
         var nib = UINib(nibName: "PostCell", bundle: nil)
         tableView?.registerNib(nib, forCellReuseIdentifier: "PostCellIdentifier")
-        tableView?.estimatedRowHeight = 100
-        tableView?.rowHeight = UITableViewAutomaticDimension
-
+    }
+    
+    override func viewWillAppear(animated: Bool)
+    {
+        super.viewWillAppear(animated)
+        
+        NetworkManager.sharedInstance.fetchFeed {
+            (objects, error) -> () in
+            
+            println(objects)
+            println(error)
+        }
     }
 
     override func didReceiveMemoryWarning() {

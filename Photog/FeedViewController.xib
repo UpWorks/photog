@@ -15,8 +15,8 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Tfh-D1-TgA">
-                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="381" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Tfh-D1-TgA">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="azy-fx-cGu"/>
@@ -24,12 +24,7 @@
                 </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-            <constraints>
-                <constraint firstAttribute="trailing" secondItem="Tfh-D1-TgA" secondAttribute="trailing" id="1vk-P3-n3y"/>
-                <constraint firstAttribute="bottom" secondItem="Tfh-D1-TgA" secondAttribute="bottom" id="Rt2-BE-g13"/>
-                <constraint firstItem="Tfh-D1-TgA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cC2-Xb-LEK"/>
-                <constraint firstItem="Tfh-D1-TgA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="zxv-uL-udf"/>
-            </constraints>
+            <point key="canvasLocation" x="595" y="271"/>
         </view>
     </objects>
 </document>
