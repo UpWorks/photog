@@ -57,6 +57,11 @@
                     <constraint firstItem="Fw6-jE-R5n" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="RU4-iD-SSf"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="dateLabel" destination="a4x-XS-DCI" id="agZ-wR-Krm"/>
+                <outlet property="postImageView" destination="zi5-2k-JGJ" id="EIt-9X-VIf"/>
+                <outlet property="usernameLabel" destination="nuf-xG-eBI" id="6Iy-4q-Jdc"/>
+            </connections>
             <point key="canvasLocation" x="415" y="153.5"/>
         </tableViewCell>
     </objects>

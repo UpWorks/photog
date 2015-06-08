@@ -10,6 +10,8 @@ import Foundation
 import Parse
 import Bolts
 
+typealias ObjectCompletionHandler = (objects: [AnyObject]?, error: NSError?) -> ()
+
 public class NetworkManager
 {
     public class var sharedInstance: NetworkManager
@@ -33,16 +35,16 @@ public class NetworkManager
         }
     }
     
-    func fetchFeed(completionHandler: (objects: [AnyObject]?, error: NSError?) -> ())
+    func fetchFeed(completionHandler: ObjectCompletionHandler!)
     {
         var relation = PFUser.currentUser()!.relationForKey("following")
         var query = relation.query()
-        query?.findObjectsInBackgroundWithBlock { (objects: [AnyObject]?, error: NSError?) -> Void in
+        query!.findObjectsInBackgroundWithBlock { (objects: [AnyObject]?, error: NSError?) -> Void  in
          
             if let constError = error
             {
                 println("error fetching following")
-                completionHandler(objects: nil, error: constError)
+                completionHandler(objects: nil, error:error)
             }
             else
             {
@@ -53,8 +55,16 @@ public class NetworkManager
                 postQuery.orderByDescending("createdAt")
                 postQuery.findObjectsInBackgroundWithBlock({ (objects: [AnyObject]?, error: NSError?) -> Void in
                     
-                    //completionHandler(objects: objects, error: error)
-                    println("success fetching feed posts \(objects)")
+                    if (error != nil)
+                    {
+                        println("error fetching feed posts)")
+                        completionHandler(objects: nil, error: error!)
+                    }
+                    else
+                    {
+                        println("Success fetching feed posts \(objects)!")
+                        completionHandler(objects: objects!, error: nil)
+                    }
                     
                 })
             }
