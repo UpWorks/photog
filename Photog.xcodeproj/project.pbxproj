@@ -27,6 +27,7 @@
 		7E8EB4791B1ABED9005D6DAC /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E8EB4781B1ABED9005D6DAC /* libsqlite3.dylib */; };
 		7E9762361B1EA5B0005AE9B3 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9762341B1EA5B0005AE9B3 /* AuthViewController.swift */; };
 		7E9762371B1EA5B0005AE9B3 /* AuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E9762351B1EA5B0005AE9B3 /* AuthViewController.xib */; };
+		7EA782741B26883D00D664B9 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA782731B26883D00D664B9 /* UIColor+Extensions.swift */; };
 		7ECB241B1B238324002B773B /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECB241A1B238324002B773B /* String+Extensions.swift */; };
 		7EE8E06B1B1804F1006640CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE8E06A1B1804F1006640CE /* AppDelegate.swift */; };
 		7EE8E0721B1804F1006640CE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EE8E0711B1804F1006640CE /* Images.xcassets */; };
@@ -70,6 +71,7 @@
 		7E8EB4781B1ABED9005D6DAC /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		7E9762341B1EA5B0005AE9B3 /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		7E9762351B1EA5B0005AE9B3 /* AuthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuthViewController.xib; sourceTree = "<group>"; };
+		7EA782731B26883D00D664B9 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		7ECB241A1B238324002B773B /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		7EE8E0651B1804F1006640CE /* Photog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Photog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EE8E0691B1804F1006640CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 				7ECB241A1B238324002B773B /* String+Extensions.swift */,
 				7E3EC1C81B23925E001B164E /* UIViewController+Extensions.swift */,
 				7E8DBF911B2546460017B96F /* NSDate+Extensions.swift */,
+				7EA782731B26883D00D664B9 /* UIColor+Extensions.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 				7E3EC1CB1B23B31F001B164E /* TabBarController.swift in Sources */,
 				7EEC5CA51B24ECE900CF6BED /* PostCell.swift in Sources */,
 				7E9762361B1EA5B0005AE9B3 /* AuthViewController.swift in Sources */,
+				7EA782741B26883D00D664B9 /* UIColor+Extensions.swift in Sources */,
 				7EEC5CA11B24EA0C00CF6BED /* FeedViewController.swift in Sources */,
 				7E41923F1B1D584A0082C053 /* StartViewController.swift in Sources */,
 			);

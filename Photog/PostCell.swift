@@ -27,7 +27,20 @@ class PostCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        self.contentView.backgroundColor = UIColor.OMLightGray()
+        self.usernameLabel?.text = nil
+        self.dateLabel?.text = nil
+    }
+    
+    override func prepareForReuse()
+    {
+        super.prepareForReuse()
+        
+        self.postImageView?.image = UIImage(named: "PostPlaceholderImage")
+        self.usernameLabel?.text = nil
+        self.dateLabel?.text = nil
+        self.post = nil
     }
 
     override func setSelected(selected: Bool, animated: Bool) {
@@ -38,6 +51,8 @@ class PostCell: UITableViewCell {
     
     func configure()
     {
+        self.postImageView!.clipsToBounds = true
+        
         if let constPost = post
         {
             // Set the username label
@@ -59,7 +74,19 @@ class PostCell: UITableViewCell {
             // Set the date label
             var date = constPost.createdAt
             self.dateLabel!.text = date?.fuzzyTime()
+            
             // Download the image and display it
+            NetworkManager.sharedInstance.fetchImage(constPost, completionHandler: {
+                (image, error) -> () in
+                
+                if image != nil{
+                    self.postImageView!.image = image
+                }
+                else
+                {
+                    // Alert the user
+                }
+            })
         }
     }
     
