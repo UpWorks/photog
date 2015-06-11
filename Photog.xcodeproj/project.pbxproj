@@ -28,6 +28,8 @@
 		7E9762361B1EA5B0005AE9B3 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9762341B1EA5B0005AE9B3 /* AuthViewController.swift */; };
 		7E9762371B1EA5B0005AE9B3 /* AuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E9762351B1EA5B0005AE9B3 /* AuthViewController.xib */; };
 		7EA782741B26883D00D664B9 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA782731B26883D00D664B9 /* UIColor+Extensions.swift */; };
+		7EA980F31B29313C0063648F /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA980F11B29313C0063648F /* SearchViewController.swift */; };
+		7EA980F41B29313C0063648F /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EA980F21B29313C0063648F /* SearchViewController.xib */; };
 		7ECB241B1B238324002B773B /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECB241A1B238324002B773B /* String+Extensions.swift */; };
 		7EE8E06B1B1804F1006640CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE8E06A1B1804F1006640CE /* AppDelegate.swift */; };
 		7EE8E0721B1804F1006640CE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EE8E0711B1804F1006640CE /* Images.xcassets */; };
@@ -72,6 +74,8 @@
 		7E9762341B1EA5B0005AE9B3 /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		7E9762351B1EA5B0005AE9B3 /* AuthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuthViewController.xib; sourceTree = "<group>"; };
 		7EA782731B26883D00D664B9 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		7EA980F11B29313C0063648F /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		7EA980F21B29313C0063648F /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
 		7ECB241A1B238324002B773B /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		7EE8E0651B1804F1006640CE /* Photog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Photog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EE8E0691B1804F1006640CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -149,6 +153,8 @@
 				7E3EC1CA1B23B31F001B164E /* TabBarController.swift */,
 				7EEC5C9F1B24EA0C00CF6BED /* FeedViewController.swift */,
 				7EEC5CA01B24EA0C00CF6BED /* FeedViewController.xib */,
+				7EA980F11B29313C0063648F /* SearchViewController.swift */,
+				7EA980F21B29313C0063648F /* SearchViewController.xib */,
 				7EEC5CA31B24ECE900CF6BED /* PostCell.swift */,
 				7EEC5CA41B24ECE900CF6BED /* PostCell.xib */,
 			);
@@ -311,6 +317,7 @@
 				7EE8E0751B1804F1006640CE /* LaunchScreen.xib in Resources */,
 				7EE8E0721B1804F1006640CE /* Images.xcassets in Resources */,
 				7E4192401B1D584A0082C053 /* StartViewController.xib in Resources */,
+				7EA980F41B29313C0063648F /* SearchViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +341,7 @@
 				7E3EC1C91B23925E001B164E /* UIViewController+Extensions.swift in Sources */,
 				7EEC5C9E1B24E77200CF6BED /* NetworkManager.swift in Sources */,
 				7E3EC1CB1B23B31F001B164E /* TabBarController.swift in Sources */,
+				7EA980F31B29313C0063648F /* SearchViewController.swift in Sources */,
 				7EEC5CA51B24ECE900CF6BED /* PostCell.swift in Sources */,
 				7E9762361B1EA5B0005AE9B3 /* AuthViewController.swift in Sources */,
 				7EA782741B26883D00D664B9 /* UIColor+Extensions.swift in Sources */,

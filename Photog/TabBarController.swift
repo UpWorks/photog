@@ -20,13 +20,12 @@ class TabBarController: UITabBarController {
         var profileViewController = UIViewController()
         profileViewController.view.backgroundColor = UIColor.yellowColor()
         
-        var findPeopleViewController = UIViewController()
-        findPeopleViewController.view.backgroundColor = UIColor.blueColor()
+        var searchPeopleViewController = SearchViewController(nibName: "SearchViewController", bundle: nil)
         
         var cameraViewController = UIViewController()
         cameraViewController.view.backgroundColor = UIColor.purpleColor()
 
-        var viewControllers = [feedViewController,profileViewController, findPeopleViewController,cameraViewController]
+        var viewControllers = [feedViewController,profileViewController, searchPeopleViewController,cameraViewController]
         self.setViewControllers(viewControllers, animated: true)
         
         var imagesNames = ["FeedIcon","ProfileIcon","SearchIcon","CameraIcon"]
