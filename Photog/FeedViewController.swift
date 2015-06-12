@@ -30,8 +30,6 @@ class FeedViewController: UIViewController, UITableViewDataSource {
         
         NetworkManager.sharedInstance.fetchFeed { (objects, error) -> () in
             
-            println(objects)
-            
             if let constObjects = objects
             {
                 self.items = constObjects

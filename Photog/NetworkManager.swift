@@ -12,6 +12,7 @@ import Bolts
 
 typealias ObjectsCompletionHandler = (objects: [AnyObject]?, error: NSError?) -> ()
 typealias ImageCompletionHandler = (image: UIImage?, error: NSError?) -> ()
+typealias BooleanCompletionHandler = (isFollowing: Bool?, error: NSError?) -> ()
 
 
 public class NetworkManager
@@ -50,7 +51,7 @@ public class NetworkManager
             }
             else
             {
-                println("success fetching following \(objects)")
+                //println("success fetching following \(objects)")
                 
                 var postQuery = PFQuery(className: "Post")
                 postQuery.whereKey("User", containedIn: objects!)
@@ -64,7 +65,7 @@ public class NetworkManager
                     }
                     else
                     {
-                        println("Success fetching feed posts \(objects)!")
+                        //println("Success fetching feed posts \(objects)!")
                         completionHandler(objects: objects!, error: nil)
                     }
                     
@@ -87,7 +88,7 @@ public class NetworkManager
             }
             else
             {
-                println("we downloaded the image!")
+                //println("we downloaded the image!")
                 let image = UIImage(data: data!)
                 completionHandler(image: image, error:nil)
             }
@@ -118,6 +119,32 @@ public class NetworkManager
             
         }
         
+    }
+    
+    func isFollowing(user: PFUser!, completionHandler: BooleanCompletionHandler)
+    {
+        var relation = PFUser.currentUser()!.relationForKey("following")
+        var query = relation.query()
+        query!.whereKey("username", equalTo: user.username!)
+        query!.findObjectsInBackgroundWithBlock {
+            (objects, error) -> Void in
+            
+            if error != nil
+            {
+                println("error determining if currentuser follows other user")
+                completionHandler(isFollowing: false, error: error)
+            }
+            else
+            {
+                //println(objects)
+                var isFollowing = objects!.count > 0
+                completionHandler(isFollowing: isFollowing, error: nil)
+            }
+            
+        }
+        
+        
+
     }
     
 }
