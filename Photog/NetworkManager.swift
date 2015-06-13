@@ -10,6 +10,7 @@ import Foundation
 import Parse
 import Bolts
 
+typealias ErrorCompletionHandler = (error: NSError?) -> ()
 typealias ObjectsCompletionHandler = (objects: [AnyObject]?, error: NSError?) -> ()
 typealias ImageCompletionHandler = (image: UIImage?, error: NSError?) -> ()
 typealias BooleanCompletionHandler = (isFollowing: Bool?, error: NSError?) -> ()
@@ -142,9 +143,32 @@ public class NetworkManager
             }
             
         }
-        
-        
-
     }
     
+    func updateFollowValue(value: Bool, user: PFUser!, completionHandler: ErrorCompletionHandler)
+    {
+        var relation = PFUser.currentUser()!.relationForKey("following")
+        
+        if (value == true)
+        {
+            relation.addObject(user)
+        }
+        else
+        {
+            relation.removeObject(user)
+        }
+        
+        PFUser.currentUser()!.saveInBackgroundWithBlock {
+            (success, error) -> Void in
+            
+            if error != nil
+            {
+                println("Error following/unfollowing user")
+                
+            }
+            
+            completionHandler(error: error)
+        }
+
+    }
 }

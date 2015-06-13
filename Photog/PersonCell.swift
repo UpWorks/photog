@@ -14,6 +14,8 @@ class PersonCell: UITableViewCell {
 
     @IBOutlet var followButton: UIButton?
     
+    var isFollowing: Bool?
+    
     var user: PFUser?
     {
         didSet
@@ -26,6 +28,7 @@ class PersonCell: UITableViewCell {
     {
         super.awakeFromNib()
         
+        self.isFollowing = false
         self.followButton?.hidden = true
     }
     
@@ -40,7 +43,6 @@ class PersonCell: UITableViewCell {
 
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
         // Configure the view for the selected state
     }
     
@@ -62,7 +64,8 @@ class PersonCell: UITableViewCell {
                 }
                 else
                 {
-                   
+                    self.isFollowing = isFollowing
+                    
                     if isFollowing == true
                     {
                         var image = UIImage(named: "UnfollowButton")
@@ -77,12 +80,30 @@ class PersonCell: UITableViewCell {
                      self.followButton?.hidden = false
                 }
                 
-                
             })
             
             // if so: configure the button to unfollow
             
             // else: configure the button to follow
+        }
+    }
+    
+    @IBAction func didTapFollow(sender: UIButton)
+    {
+        
+        self.followButton?.enabled = false
+        
+        var newValue = !(self.isFollowing == true)
+        
+        NetworkManager.sharedInstance.updateFollowValue(newValue, user: self.user) { (error) -> () in
+        
+            self.followButton?.enabled = true
+            
+            var image = (newValue == true) ? UIImage(named: "UnfollowButton") : UIImage(named: "FollowButton")
+            self.followButton?.setImage(image, forState: .Normal)
+            
+            self.isFollowing = newValue
+            
         }
     }
 }
