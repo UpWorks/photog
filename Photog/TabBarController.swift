@@ -10,15 +10,15 @@ import UIKit
 import Parse
 import Bolts
 
-class TabBarController: UITabBarController {
+class TabBarController: UITabBarController, UITabBarControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         var feedViewController = FeedViewController(nibName: "FeedViewController", bundle: nil)
         
-        var profileViewController = UIViewController()
-        profileViewController.view.backgroundColor = UIColor.yellowColor()
+        var profileViewController = ProfileViewController(nibName: "ProfileViewController", bundle: nil)
+        profileViewController.user = PFUser.currentUser()
         
         var searchPeopleViewController = SearchViewController(nibName: "SearchViewController", bundle: nil)
         
@@ -42,7 +42,9 @@ class TabBarController: UITabBarController {
         self.navigationItem.hidesBackButton = true
         self.tabBar.translucent = false
         
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Sign Out", style: .Done, target: self, action: "didTapSignOut:")
+        self.delegate = self
+        
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Sign Out", style: .Done, target: self.delegate, action: "didTapSignOut:")
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -62,5 +64,22 @@ class TabBarController: UITabBarController {
         PFUser.logOut()
         
         self.navigationController?.popToRootViewControllerAnimated(true)
+    }
+    
+    func tabBarController(tabBarController: UITabBarController, shouldSelectViewController viewController: UIViewController) -> Bool
+    {
+        
+        var cameraViewController = self.viewControllers![3] as! UIViewController
+        if viewController == cameraViewController
+        {
+            showCamera()
+            return false
+        }
+        return true
+    }
+    
+    func showCamera()
+    {
+        println("Show Camera!")
     }
 }

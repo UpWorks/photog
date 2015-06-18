@@ -42,6 +42,8 @@
 		7EEC5CA21B24EA0C00CF6BED /* FeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EEC5CA01B24EA0C00CF6BED /* FeedViewController.xib */; };
 		7EEC5CA51B24ECE900CF6BED /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEC5CA31B24ECE900CF6BED /* PostCell.swift */; };
 		7EEC5CA61B24ECE900CF6BED /* PostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EEC5CA41B24ECE900CF6BED /* PostCell.xib */; };
+		7EEE10721B324F5F00C84B0A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEE10701B324F5F00C84B0A /* ProfileViewController.swift */; };
+		7EEE10731B324F5F00C84B0A /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EEE10711B324F5F00C84B0A /* ProfileViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +96,8 @@
 		7EEC5CA01B24EA0C00CF6BED /* FeedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedViewController.xib; sourceTree = "<group>"; };
 		7EEC5CA31B24ECE900CF6BED /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		7EEC5CA41B24ECE900CF6BED /* PostCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostCell.xib; sourceTree = "<group>"; };
+		7EEE10701B324F5F00C84B0A /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		7EEE10711B324F5F00C84B0A /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,15 +158,17 @@
 				7E41923E1B1D584A0082C053 /* StartViewController.xib */,
 				7E9762341B1EA5B0005AE9B3 /* AuthViewController.swift */,
 				7E9762351B1EA5B0005AE9B3 /* AuthViewController.xib */,
-				7E3EC1CA1B23B31F001B164E /* TabBarController.swift */,
 				7EEC5C9F1B24EA0C00CF6BED /* FeedViewController.swift */,
 				7EEC5CA01B24EA0C00CF6BED /* FeedViewController.xib */,
+				7EEE10701B324F5F00C84B0A /* ProfileViewController.swift */,
+				7EEE10711B324F5F00C84B0A /* ProfileViewController.xib */,
 				7EA980F11B29313C0063648F /* SearchViewController.swift */,
 				7EA980F21B29313C0063648F /* SearchViewController.xib */,
 				7EA636601B2A7A5500BE1A28 /* PersonCell.swift */,
 				7EA636611B2A7A5500BE1A28 /* PersonCell.xib */,
 				7EEC5CA31B24ECE900CF6BED /* PostCell.swift */,
 				7EEC5CA41B24ECE900CF6BED /* PostCell.xib */,
+				7E3EC1CA1B23B31F001B164E /* TabBarController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -317,6 +323,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EEE10731B324F5F00C84B0A /* ProfileViewController.xib in Resources */,
 				7E9762371B1EA5B0005AE9B3 /* AuthViewController.xib in Resources */,
 				7EEC5CA61B24ECE900CF6BED /* PostCell.xib in Resources */,
 				7EEC5CA21B24EA0C00CF6BED /* FeedViewController.xib in Resources */,
@@ -346,6 +353,7 @@
 				7EA636621B2A7A5500BE1A28 /* PersonCell.swift in Sources */,
 				7ECB241B1B238324002B773B /* String+Extensions.swift in Sources */,
 				7EE8E06B1B1804F1006640CE /* AppDelegate.swift in Sources */,
+				7EEE10721B324F5F00C84B0A /* ProfileViewController.swift in Sources */,
 				7E3EC1C91B23925E001B164E /* UIViewController+Extensions.swift in Sources */,
 				7EEC5C9E1B24E77200CF6BED /* NetworkManager.swift in Sources */,
 				7E3EC1CB1B23B31F001B164E /* TabBarController.swift in Sources */,
