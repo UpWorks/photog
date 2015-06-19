@@ -49,7 +49,7 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="Fw6-jE-R5n" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="5gh-KI-fw8"/>
-                    <constraint firstAttribute="bottom" secondItem="zi5-2k-JGJ" secondAttribute="bottom" priority="750" constant="40" id="7i4-78-uAv"/>
+                    <constraint firstAttribute="bottom" secondItem="zi5-2k-JGJ" secondAttribute="bottom" constant="40" id="7i4-78-uAv"/>
                     <constraint firstItem="zi5-2k-JGJ" firstAttribute="top" secondItem="Fw6-jE-R5n" secondAttribute="bottom" constant="10" id="AFQ-un-mN1"/>
                     <constraint firstAttribute="trailing" secondItem="Fw6-jE-R5n" secondAttribute="trailing" id="DzS-Dv-eyZ"/>
                     <constraint firstItem="zi5-2k-JGJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Lfy-sl-YIa"/>

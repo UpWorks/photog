@@ -185,11 +185,34 @@ public class NetworkManager
             }
             else
             {
-                //println("Success fetching feed posts \(objects)!")
                 completionHandler(objects: objects!, error: nil)
             }
             
         })
-
+    }
+    
+    func postImage(image: UIImage, completionHandler: ErrorCompletionHandler?)
+    {
+        var imageData = UIImagePNGRepresentation(image) // returns NSData
+        var imageFile = PFFile(name: "image.png", data: imageData)
+        
+        var post = PFObject(className: "Post")
+        post["Image"] = imageFile
+        post["User"] = PFUser.currentUser()
+        
+        post.saveInBackgroundWithBlock {
+            (success, error) -> Void in
+            
+            if let constError = error
+            {
+                println("Error uploading post object")
+            }
+            
+            if let constCompletionHandler = completionHandler
+            {
+                constCompletionHandler(error: error)
+            }
+            
+        }
     }
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E17AE231B33BDB600ECA3F9 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E17AE221B33BDB600ECA3F9 /* UIImage+Extensions.swift */; };
 		7E3EC1C91B23925E001B164E /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3EC1C81B23925E001B164E /* UIViewController+Extensions.swift */; };
 		7E3EC1CB1B23B31F001B164E /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3EC1CA1B23B31F001B164E /* TabBarController.swift */; };
 		7E41923F1B1D584A0082C053 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E41923D1B1D584A0082C053 /* StartViewController.swift */; };
@@ -57,6 +58,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7E17AE221B33BDB600ECA3F9 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
 		7E3EC1C81B23925E001B164E /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		7E3EC1CA1B23B31F001B164E /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		7E41923D1B1D584A0082C053 /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 				7E3EC1C81B23925E001B164E /* UIViewController+Extensions.swift */,
 				7E8DBF911B2546460017B96F /* NSDate+Extensions.swift */,
 				7EA782731B26883D00D664B9 /* UIColor+Extensions.swift */,
+				7E17AE221B33BDB600ECA3F9 /* UIImage+Extensions.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 				7EEC5CA51B24ECE900CF6BED /* PostCell.swift in Sources */,
 				7E9762361B1EA5B0005AE9B3 /* AuthViewController.swift in Sources */,
 				7EA782741B26883D00D664B9 /* UIColor+Extensions.swift in Sources */,
+				7E17AE231B33BDB600ECA3F9 /* UIImage+Extensions.swift in Sources */,
 				7EEC5CA11B24EA0C00CF6BED /* FeedViewController.swift in Sources */,
 				7E41923F1B1D584A0082C053 /* StartViewController.swift in Sources */,
 			);
